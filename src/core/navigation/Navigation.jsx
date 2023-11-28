@@ -2,15 +2,16 @@ import React, { useState, useEffect } from "react";
 import { isDesktop, isTablet } from "react-device-detect";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import SignInPage from "../../desktop/blocks/SignInPage/SignInPage";
+//import SignInPage from "../../desktop/blocks/SignInPage/SignInPage";
 import RegisterPage from "../../desktop/blocks/RegisterPage/RegisterPage";
+import HomePage from "../../desktop/blocks/HomePage/HomePage";
 
 const renderRouter = (platform) => {
   if (platform === "desktop" && isDesktop)
     return (
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<SignInPage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/register" element={<RegisterPage />} />
         </Routes>
       </BrowserRouter>
@@ -19,7 +20,7 @@ const renderRouter = (platform) => {
     return (
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<SignInPage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/register" element={<RegisterPage />} />
         </Routes>
       </BrowserRouter>
@@ -27,7 +28,7 @@ const renderRouter = (platform) => {
   else return (
     <BrowserRouter>
         <Routes>
-          <Route path="/" element={<SignInPage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/register" element={<RegisterPage />} />
         </Routes>
       </BrowserRouter>

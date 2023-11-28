@@ -1,0 +1,126 @@
+@import "../../../core/theme/colors.scss";
+@import "../../../core/theme/fonts.scss";
+
+.containerNavBar {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin: 50px auto 0 auto;
+}
+.burger {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0 auto 0;
+  margin-right: 30px;
+}
+.line {
+  background-color: $pureWhite;
+  width: 30px;
+  height: 2px;
+  margin-top: 6px;
+}
+.title {
+  font-family: "K2D";
+  color: $pureWhite;
+  font-size: 35px;
+  margin: 0;
+  margin-left: 30px;
+}
+.searchBar {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+}
+.inputSearchBar {
+  height: 40px;
+  width: 100%;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  background-color: $secondaryBackgroundColor;
+  font-size: 17px;
+  color: $pureWhite;
+  padding-left: 10px;
+  border: 1px solid $greyBorder;
+  border-right: 0;
+  margin: auto auto auto auto;
+}
+.inputSearchBar:focus {
+  outline: none;
+}
+.searchButton {
+  height: 44px;
+  width: 70px;
+  border-radius: 0px 5px 5px 0px;
+  background-color: $secondaryBackgroundColor;
+  border: 1px solid $greyBorder;
+  color: $pureWhite;
+  margin: auto 0 auto 0;
+}
+.bell {
+  height: 40px;
+  width: auto;
+  margin-right: 30px;
+}
+.searchIconImg {
+  height: 25px;
+  width: auto;
+}
+.profileIcon {
+  width: 40px;
+  height: 40px;
+  background-color: $pureWhite;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+.wrapStart {
+  display: flex;
+  flex-direction: row;
+}
+.wrapEnd {
+  display: flex;
+  flex-direction: row;
+}
+.content {
+  width: 75%;
+  margin: auto;
+  margin-top: 8vw;
+}
+.filterOption {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.filterText1 {
+  font-family: "K2D";
+  color: $pureWhite;
+  font-size: 25px;
+
+}
+.filterText2 {
+  font-family: "K2D";
+  color: $greyBorderLight;
+  font-size: 25px;
+}
+.filterUnderLine {
+  width: 100%;
+  height: 7px;
+  border-radius: 5px;
+  background-color: $secondaryBackgroundColor;
+}
+.createButton {
+  width: 100%;
+  height: 80px;
+  margin-top: 35px;
+  border-radius: 5px;
+  background-color: $secondaryBackgroundColor;
+  border: none;
+  color: $pureWhite;
+  font-family: "K2D";
+  font-size: 20px;
+}
+.createButton:hover {
+  background-color: $softPurpleFocus;
+  cursor: pointer;
+}
