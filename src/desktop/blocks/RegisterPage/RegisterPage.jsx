@@ -18,7 +18,7 @@ const RegisterPage = () => {
             <label className={styles.labelStyle}>Confirm Password</label>
             <input className={styles.inputStyle}></input>
             <button className={styles.signInButton}>Sign in</button>
-            <p className={styles.alreadyText}>Already have an account? <a className={styles.alreadyLink} href="/">Sign in.</a></p>
+            <p className={styles.alreadyText}>Already have an account? <a className={styles.alreadyLink} href="/signIn">Sign in.</a></p>
         </div>
     </div>
   );
