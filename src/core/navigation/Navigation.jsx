@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import { isDesktop, isTablet } from "react-device-detect";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-//import SignInPage from "../../desktop/blocks/SignInPage/SignInPage";
+import SignInPage from "../../desktop/blocks/SignInPage/SignInPage";
 import RegisterPage from "../../desktop/blocks/RegisterPage/RegisterPage";
 import HomePage from "../../desktop/blocks/HomePage/HomePage";
+import ProfilePage from "../../desktop/blocks/ProfilePage/ProfilePage";
 
 const renderRouter = (platform) => {
   if (platform === "desktop" && isDesktop)
@@ -12,6 +13,8 @@ const renderRouter = (platform) => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/signIn" element={<SignInPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
           <Route path="/register" element={<RegisterPage />} />
         </Routes>
       </BrowserRouter>
@@ -20,7 +23,9 @@ const renderRouter = (platform) => {
     return (
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
+          <Route path="/signIn" element={<SignInPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
           <Route path="/register" element={<RegisterPage />} />
         </Routes>
       </BrowserRouter>
@@ -28,7 +33,9 @@ const renderRouter = (platform) => {
   else return (
     <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
+          <Route path="/signIn" element={<SignInPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
           <Route path="/register" element={<RegisterPage />} />
         </Routes>
       </BrowserRouter>
