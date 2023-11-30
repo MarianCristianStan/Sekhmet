@@ -4,6 +4,7 @@ import bellImg from "../../../core/assets/icons/Bell.svg";
 import searchIconImg from "../../../core/assets/icons/SearchIcon.svg";
 
 import styles from "./style.module.scss";
+import VideoPost from "../../components/VideoPost";
 
 const HomePage = () => {
   return (
@@ -44,6 +45,10 @@ const HomePage = () => {
         <div className={styles.filterUnderLine} />
         <button className={styles.createButton}>Create</button>
       </div>
+      <VideoPost />
+      <VideoPost />
+      <VideoPost />
+      <VideoPost />
     </>
   );
 };
