@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sekhmet-server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c3310a199396c17f40680631e555ba8e52a99d0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b8ec22ab1746435f31c89f3a5985dcec2ee6d27")]
 [assembly: System.Reflection.AssemblyProductAttribute("sekhmet-server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sekhmet-server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
