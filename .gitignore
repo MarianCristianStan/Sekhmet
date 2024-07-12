@@ -21,3 +21,42 @@
 sekhmet-client/npm-debug.log*
 sekhmet-client/yarn-debug.log*
 sekhmet-client/yarn-error.log*
+
+# .NET-specific rules
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+*.pdb
+*.cache
+*.log
+*.vs
+[Bb]in/
+[Oo]bj/
+
+# Additional .NET-specific directories and files to ignore
+sekhmet-server/.vs/
+sekhmet-server/obj/
+sekhmet-server/bin/
+
+# Optional - Uncomment if you have these tasks
+# *.mdf
+# *.ldf
+# *.pidb
+
+# Rider-specific files
+.idea/
+.idea/*
+*.DotSettings.user
+
+# Resharper-specific files
+_ReSharper.Caches/
+
+# Entity Framework
+*_i.csc
+*_p.csc
+
+# NuGet
+*.nupkg
+.nuget/
