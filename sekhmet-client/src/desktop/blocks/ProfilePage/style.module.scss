@@ -1,0 +1,40 @@
+@import "../../../core/theme/colors.scss";
+@import "../../../core/theme/fonts.scss";
+
+.homeButton {
+  width: 100px;
+  height: 100px;
+  margin: 35px auto 0 35px;
+  border-radius: 5px;
+  background-color: $secondaryBackgroundColor;
+  border: none;
+  color: $pureWhite;
+  font-family: "K2D";
+  font-size: 15px;
+}
+.homeButton:hover {
+  background-color: $softPurpleFocus;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 200px;
+  justify-content:space-around;
+  width: 1440px;
+}
+.profileImage {
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  background-color: $pureWhite;
+  margin: auto;
+}
+.profileDescription {
+  font-family: "K2D";
+  font-size: 20px;
+  color: $pureWhite;
+  width: 500px;
+  margin: auto;
+}

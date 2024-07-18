@@ -1,0 +1,56 @@
+@import "../../core/theme/colors.scss";
+@import "../../core/theme/fonts.scss";
+
+.container {
+  width: 1000px;
+  background-color: $secondaryBackgroundColor;
+  margin: auto;
+  margin-top: 200px;
+  display: flex;
+  height: 500px;
+  border-radius: 15px 15px 15px 15px;
+  justify-content: space-between;
+}
+.videoContent {
+  width: 70%;
+}
+.videoContainer {
+  width: 600px;
+  height: auto;
+  margin: 40px auto 0 auto;
+}
+.videoStyling {
+  width: 100%;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Umbră sub video */
+}
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+.buttonStyling {
+  font-family: "K2D";
+  background-color: #8e44ad;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 30px auto 0 auto;
+  width: 200px;
+  height: 50px;
+}
+.buttonStyling:hover {
+  background-color: #9b59b6;
+}
+.descriptionText {
+  width: 30%;
+  font-family: "K2D";
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: $pureWhite;
+  border-radius: 0px 15px 15px 0px;
+  background: linear-gradient(to bottom, #8e44ad, #fff); /* Gradient de la mov la alb */
+}
