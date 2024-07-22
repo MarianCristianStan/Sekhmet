@@ -1,6 +1,7 @@
 @import "../../../core/theme/colors.scss";
 @import "../../../core/theme/fonts.scss";
 
+
 .containerNavBar {
   display: flex;
   flex-direction: row;
@@ -32,9 +33,11 @@
   display: flex;
   flex-direction: row;
   width: 40%;
-}
-.inputSearchBar {
   height: 40px;
+}
+
+.inputSearchBar {
+  height: 100%;
   width: 100%;
   border-radius: 5px 0 0 5px;
   border: none;
@@ -44,29 +47,37 @@
   padding-left: 10px;
   border: 1px solid $greyBorder;
   border-right: 0;
-  margin: auto auto auto auto;
+  margin: 0;
 }
+
 .inputSearchBar:focus {
   outline: none;
 }
+
 .searchButton {
-  height: 44px;
+  height: 100%;
   width: 70px;
   border-radius: 0px 5px 5px 0px;
   background-color: $secondaryBackgroundColor;
   border: 1px solid $greyBorder;
   color: $pureWhite;
-  margin: auto 0 auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .bell {
   height: 40px;
   width: auto;
   margin-right: 30px;
 }
+
 .searchIconImg {
   height: 25px;
-  width: auto;
+  display: block;
+  margin: auto;
 }
+
 .profileIcon {
   width: 40px;
   height: 40px;
@@ -105,8 +116,9 @@
 }
 .filterUnderLine {
   width: 100%;
-  height: 7px;
+  height: 6px;
   border-radius: 5px;
+  margin-top: 20px;
   background-color: $secondaryBackgroundColor;
 }
 .createButton {
