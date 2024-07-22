@@ -8,7 +8,7 @@ namespace sekhmet_server.Models
         [Key]
         public int Post_ID  { get; set; }
         public string? Description { get; set; }
-        public DateTime? Created_At_Datetime { get; set; }  
+        public DateTime Created_At_Datetime { get; set; }  
 
         [ForeignKey("User")]
         public int User_ID { get; set; }
