@@ -7,9 +7,9 @@ namespace sekhmet_server.Models
     {
         [Key]
         public int User_ID { get; set; }
-        public string? Username { get; set; }
+        public string Username { get; set; }
         public string? Email { get; set; }
-        public string? Password_Hash { get; set; }
+        public string Password_Hash { get; set; }
         public string? First_Name { get; set; }
         public string? Last_Name { get; set; }
         public byte[]? Profile_Picture { get; set; }
