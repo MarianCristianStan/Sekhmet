@@ -1,5 +1,7 @@
-
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using sekhmet_server;
+using sekhmet_server.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +19,8 @@ void ConfigServices()
 	builder.Services.AddSwaggerGen();
 	builder.Services.AddRepositories();
 	builder.Services.AddServices();
+    builder.Services.AddDbContext<SekhmetContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("SekhmetDb"))); 
+
 }
 
 void ConfigCors()
